@@ -31,6 +31,9 @@
 		5A64407927E9890400693042 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64407627E9890400693042 /* Hike.swift */; };
 		5A64407A27E9890400693042 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64407727E9890400693042 /* ModelData.swift */; };
 		5A64407B27E9890400693042 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64407827E9890400693042 /* Landmark.swift */; };
+		5A64407E27E98BA700693042 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64407D27E98BA700693042 /* CategoryHome.swift */; };
+		5A64408027E98E1B00693042 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64407F27E98E1B00693042 /* CategoryRow.swift */; };
+		5A64408227E98FBD00693042 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64408127E98FBD00693042 /* CategoryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		5A64407627E9890400693042 /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		5A64407727E9890400693042 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		5A64407827E9890400693042 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		5A64407D27E98BA700693042 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		5A64407F27E98E1B00693042 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		5A64408127E98FBD00693042 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +127,12 @@
 		5A64405027E988FE00693042 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A64407C27E98B7100693042 /* Categories */,
 				5A64405127E988FE00693042 /* Hikes */,
 				5A64405627E988FE00693042 /* Landmarks */,
-				5A64405A27E988FE00693042 /* ContentView.swift */,
 				5A64405B27E988FE00693042 /* Helpers */,
 				5A64405F27E988FE00693042 /* Badges */,
+				5A64405A27E988FE00693042 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,10 +184,20 @@
 			isa = PBXGroup;
 			children = (
 				5A64407627E9890400693042 /* Hike.swift */,
-				5A64407727E9890400693042 /* ModelData.swift */,
 				5A64407827E9890400693042 /* Landmark.swift */,
+				5A64407727E9890400693042 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5A64407C27E98B7100693042 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5A64408127E98FBD00693042 /* CategoryItem.swift */,
+				5A64407F27E98E1B00693042 /* CategoryRow.swift */,
+				5A64407D27E98BA700693042 /* CategoryHome.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,13 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A64408027E98E1B00693042 /* CategoryRow.swift in Sources */,
 				5A64407127E988FE00693042 /* HexagonParameters.swift in Sources */,
+				5A64407E27E98BA700693042 /* CategoryHome.swift in Sources */,
 				5A64406827E988FE00693042 /* HikeView.swift in Sources */,
 				5A64407927E9890400693042 /* Hike.swift in Sources */,
 				5A64406627E988FE00693042 /* HikeGraph.swift in Sources */,
 				5A64406D27E988FE00693042 /* MapView.swift in Sources */,
 				5A64407227E988FE00693042 /* BadgeSymbol.swift in Sources */,
 				5A64406927E988FE00693042 /* LandmarkList.swift in Sources */,
+				5A64408227E98FBD00693042 /* CategoryItem.swift in Sources */,
 				5A64407427E988FE00693042 /* Badge.swift in Sources */,
 				5A64407027E988FE00693042 /* RotatedBadgeSymbol.swift in Sources */,
 				5A64406E27E988FE00693042 /* CircleImage.swift in Sources */,
