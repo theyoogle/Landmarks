@@ -11,10 +11,11 @@ struct CategoryHome: View {
     
     @EnvironmentObject var modelData: ModelData
     
+    @State private var showingProfile = false
+    
     var body: some View {
         NavigationView {
             List {
-                
                 modelData.featured[0].image
                     .resizable()
                     .scaledToFill()
@@ -27,7 +28,19 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .listStyle(.inset)
             .navigationTitle("Featured")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
         }
     }
 }
